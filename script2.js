@@ -6,11 +6,11 @@ addEventListener("DOMContentLoaded", async function() {
 		// response from server
 
 		// local host / dev
-		const response = await fetch("http://localhost:3000/api/songs");
+		// const response = await fetch("http://localhost:3000/api/songs");
 		// to run on local server: npx http-server -p 8080
 
 		// live
-		// const response = await fetch("https://sdev-module5-tutorial.onrender.com/api/songs");
+		const response = await fetch("https://sdev-module5-tutorial.onrender.com/api/songs");
 
 		if (!response.ok) {
 	    	throw new Error(`HTTP error! Status: ${response.status}`);
@@ -57,11 +57,11 @@ addEventListener("DOMContentLoaded", async function() {
 	    // response from server
 
 	    // local host / dev
-	    const response = await fetch("http://localhost:3000/api/courses");
+	    // const response = await fetch("http://localhost:3000/api/courses");
 	    // to run on local server: npx http-server -p 8080
 
 	    // live
-	    // const response = await fetch("https://sdev-module5-tutorial.onrender.com/api/courses");
+	    const response = await fetch("https://sdev-module5-tutorial.onrender.com/api/courses");
 
 	    if (!response.ok) {
 	        throw new Error(`HTTP error! Status: ${response.status}`);
@@ -112,11 +112,11 @@ addEventListener("DOMContentLoaded", async function() {
 		// response from server
 
 		// local host / dev
-		const response = await fetch("http://localhost:3000/api/studentCourses");
+		// const response = await fetch("http://localhost:3000/api/studentCourses");
 		// to run on local server: npx http-server -p 8080
 
 		// live
-		// const response = await fetch("https://sdev-module5-tutorial.onrender.com/api/courses");
+		const response = await fetch("https://sdev-module5-tutorial.onrender.com/api/studentCourses");
 
 		if (!response.ok) {
 		    throw new Error(`HTTP error! Status: ${response.status}`);
@@ -134,7 +134,12 @@ addEventListener("DOMContentLoaded", async function() {
 			// this is from a google example showing how to extract the course name value from the promise
 
 			// get the course data, then run promise chain
-			fetch('http://localhost:3000/api/courses/' + course.courseId)
+			
+			// dev
+			// fetch('http://localhost:3000/api/courses/' + course.courseId)
+			
+			// live
+			fetch('https://sdev-module5-tutorial.onrender.com/api/courses/' + course.courseId)
 			  .then(response => response.json()) // Extracts the JSON promise
 			  .then(jsonData => {
 
