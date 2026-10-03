@@ -27,7 +27,13 @@
             </div>
             <div class = "col-md-4">
                 <b>Add Songs</b>
-                <form action="http://localhost:3000/api/create" method="POST">
+
+                <!-- 
+                    dev: http://localhost:3000/api/create
+                    live: https://sdev-module5-tutorial.onrender.com/api/create
+                -->
+
+                <form action="https://sdev-module5-tutorial.onrender.com/api/create" method="POST">
                     <table>
                         <tr>
                             <td>
@@ -59,7 +65,7 @@
                 <b>Add course to list of available courses</b>
                 <br>
                 <i>Visible only to instructor.</i>
-                <form action="http://localhost:3000/api/addCourse" method="POST">
+                <form action="https://sdev-module5-tutorial.onrender.com/api/addCourse" method="POST">
                     <table>
                         <tr>
                             <td>
@@ -81,7 +87,7 @@
                     </ul>
 
                 <b>Add course to student schedule</b>
-                <form action="http://localhost:3000/api/addStudentCourse" method="POST">
+                <form action="https://sdev-module5-tutorial.onrender.com/api/addStudentCourse" method="POST">
                     <input type = "hidden" name = "studentId" id = "studentId" value = "6abfc36225554d5ad7f1b110">
                     <table>
                         <tr>
