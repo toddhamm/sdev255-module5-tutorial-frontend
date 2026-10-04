@@ -98,7 +98,7 @@ addEventListener("DOMContentLoaded", async function() {
 	    try {
 	      //  Send the HTTP DELETE request
 	      // let url = "http://localhost:3000/api/songs/";
-	      let url = "https://sdev-module5-tutorial.onrender.com/api/songs";
+	      let url = "https://sdev-module5-tutorial.onrender.com/api/songs/";
 	      const response = await fetch(url + songID, {
 	        method: 'DELETE',
 	        headers: {
